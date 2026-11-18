@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Once. Reach Every Major Streaming Platform.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&family=Space+Grotesk:ital,wght@0,400;0,500;0,600;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main>
+      <!-- SECTION 1: HERO -->
+      <section class="hero">
+        <img
+          src="./assets/hero-bg.png"
+          alt="Artist studio background"
+          class="hero-bg"
+        />
+        <div class="hero-top-gradient" aria-hidden="true"></div>
+        <div class="hero-bottom-vignette" aria-hidden="true"></div>
+
+        <div class="container hero-container">
+          <!-- Navbar -->
+          <header class="navbar hero-fade" style="--delay: 0.04s">
+            <a href="#" class="logo-link" aria-label="Home">
+              <img src="./assets/logo.svg" alt="Brand Logo" class="logo-img" />
+            </a>
+
+            <nav class="nav-links" aria-label="Primary">
+              <a href="#features" class="nav-link">Features</a>
+              <a href="#essentials" class="nav-link">Pricing</a>
+              <a href="#process" class="nav-link">Support</a>
+            </nav>
+
+            <button type="button" class="login-btn">Login</button>
+          </header>
+
+          <!-- Hero Content -->
+          <div class="hero-body">
+            <h1 class="hero-title hero-fade" style="--delay: 0.1s">
+              Upload Once. Reach Every Major
+              <span class="streaming-highlight">Streaming</span> Platform.
+            </h1>
+
+            <div class="hero-features">
+              <div class="hero-feature-item hero-fade" style="--delay: 0.2s">
+                <div class="hero-feature-icon">
+                  <img src="./assets/icon-global.svg" alt="" />
+                </div>
+                <span>Global Distribution</span>
+              </div>
+
+              <div class="hero-feature-item hero-fade" style="--delay: 0.28s">
+                <div class="hero-feature-icon">
+                  <img src="./assets/icon-upload.svg" alt="" />
+                </div>
+                <span>Easy Upload</span>
+              </div>
+
+              <div class="hero-feature-item hero-fade" style="--delay: 0.36s">
+                <div class="hero-feature-icon">
+                  <img src="./assets/icon-earnings.svg" alt="" />
+                </div>
+                <span>Track Earnings</span>
+              </div>
+            </div>
+
+            <div class="social-proof hero-fade" style="--delay: 0.44s">
+              <div class="avatar-stack">
+                <img src="./assets/avatar-1.png" alt="Independent artist 1" />
+                <img src="./assets/avatar-2.png" alt="Independent artist 2" />
+                <img src="./assets/avatar-3.png" alt="Independent artist 3" />
+              </div>
+              <div class="social-proof-text">
+                <strong>Trusted by</strong>
+                <span>10,000+ Independent Artists</span>
+              </div>
+            </div>
+
+            <!-- Stacked Falling Cards -->
+            <div class="hero-cards-wrap" id="heroCards">
+              <div class="hero-cards-stage">
+                <div
+                  class="hero-card hero-card-bottom"
+                  data-card-index="0"
+                >
+                  <img
+                    src="./assets/hero-card-bottom.png"
+                    alt="Streaming distribution card 3"
+                    draggable="false"
+                  />
+                </div>
+                <div
+                  class="hero-card hero-card-middle"
+                  data-card-index="1"
+                >
+                  <img
+                    src="./assets/hero-card-middle.png"
+                    alt="Streaming distribution card 2"
+                    draggable="false"
+                  />
+                </div>
+                <div
+                  class="hero-card hero-card-top"
+                  data-card-index="2"
+                >
+                  <img
+                    src="./assets/hero-card-top.png"
+                    alt="Streaming distribution card 1"
+                    draggable="false"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: DISTRIBUTE YOUR MUSIC WORLDWIDE -->
+      <section id="features" class="distribution-section">
+        <div class="container distribution-grid">
+          <!-- Left Image + Floating Interactive Release Format Card -->
+          <div class="distribution-visual">
+            <div class="distribution-image-wrap reveal" style="--delay: 0.05s">
+              <img
+                src="./assets/section2-image.png"
+                alt="Artist music distribution"
+                class="distribution-image"
+              />
+            </div>
+
+            <div class="format-card reveal" style="--delay: 0.2s">
+              <div class="format-card-header"></div>
+              <div class="format-card-body">
+                <p class="format-card-title">
+                  Select Release Format <span class="required-star">*</span>
+                </p>
+
+                <div class="format-list" id="formatList">
+                  <button
+                    type="button"
+                    class="format-option is-selected"
+                    data-format="Album"
+                  >
+                    <img src="./assets/icon-format-album.svg" alt="" />
+                    <div>
+                      <strong>Album</strong>
+                      <span>6+ Tracks</span>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="format-option"
+                    data-format="EP"
+                  >
+                    <img src="./assets/icon-format-ep.svg" alt="" />
+                    <div>
+                      <strong>EP</strong>
+                      <span>2-5 Tracks</span>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="format-option"
+                    data-format="Single"
+                  >
+                    <img src="./assets/icon-format-single.svg" alt="" />
+                    <div>
+                      <strong>Single</strong>
+                      <span>1-2 Tracks</span>
+                    </div>
+                  </button>
+
+                  <button
+                    type="button"
+                    class="format-option"
+                    data-format="Compilation"
+                  >
+                    <img src="./assets/icon-format-compilation.svg" alt="" />
+                    <div>
+                      <strong>Compilation</strong>
+                      <span>Various Artist</span>
+                    </div>
+                  </button>
+                </div>
+
+                <button
+                  type="button"
+                  class="format-continue-btn"
+                  id="formatContinueBtn"
+                >
+                  Continue
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Copy & Checklist -->
+          <div class="distribution-copy">
+            <h2 class="section-heading reveal" style="--delay: 0.05s">
+              Distribute Your Music Worldwide with One Powerful Platform
+            </h2>
+            <p class="distribution-subtitle reveal" style="--delay: 0.14s">
+              Upload your tracks, artwork, and release details in minutes.
+              Publish to major streaming platforms and manage everything from
+              one simple dashboard.
+            </p>
+
+            <ul class="checklist">
+              <li class="checklist-item reveal" style="--delay: 0.2s">
+                <span class="check-circle">
+                  <img src="./assets/icon-check.svg" alt="" />
+                </span>
+                <span>Reach 150+ global streaming platforms instantly</span>
+              </li>
+              <li class="checklist-item reveal" style="--delay: 0.27s">
+                <span class="check-circle">
+                  <img src="./assets/icon-check.svg" alt="" />
+                </span>
+                <span>Guided step by step release uploader</span>
+              </li>
+              <li class="checklist-item reveal" style="--delay: 0.34s">
+                <span class="check-circle">
+                  <img src="./assets/icon-check.svg" alt="" />
+                </span>
+                <span>Real time performance and royalty tracking</span>
+              </li>
+              <li class="checklist-item reveal" style="--delay: 0.41s">
+                <span class="check-circle">
+                  <img src="./assets/icon-check.svg" alt="" />
+                </span>
+                <span>Keep full ownership of your music</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: ESSENTIALS -->
+      <section id="essentials" class="essentials-section">
+        <div class="container">
+          <h2 class="section-heading essentials-heading reveal">
+            Music Distribution Essentials Built for Independent Artists
+          </h2>
+
+          <div class="bento-grid">
+            <article class="bento-card bento-navy reveal" style="--delay: 0.08s">
+              <div class="bento-top">
+                <span class="bento-stat">150+</span>
+                <p class="bento-desc">
+                  Reach over 150 global streaming platforms instantly
+                </p>
+              </div>
+              <button type="button" class="bento-btn bento-btn-navy">
+                View Platforms
+              </button>
+            </article>
+
+            <article class="bento-card bento-teal reveal" style="--delay: 0.16s">
+              <div class="bento-top">
+                <span class="bento-stat">100%</span>
+                <p class="bento-desc">
+                  Keep full ownership and rights to your music
+                </p>
+              </div>
+              <button type="button" class="bento-btn bento-btn-teal">
+                Learn More
+              </button>
+            </article>
+
+            <article class="bento-card bento-sky reveal" style="--delay: 0.24s">
+              <span class="bento-stat bento-stat-dark">Real Time</span>
+              <p class="bento-desc bento-desc-dark">
+                Track streams performance and royalties live
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 4: SIMPLIFY YOUR MUSIC RELEASE PROCESS -->
+      <section id="process" class="process-section">
+        <div class="container">
+          <h2 class="section-heading process-heading reveal">
+            Simplify Your Music Release Process
+          </h2>
+
+          <div class="process-grid">
+            <article class="process-item reveal" style="--delay: 0.04s">
+              <div class="process-icon-box">
+                <img src="./assets/icon-guided-flow.svg" alt="" />
+              </div>
+              <h3>Guided Release Flow</h3>
+              <p>
+                Follow a clear step by step upload system to publish your single
+                EP or album without confusion.
+              </p>
+            </article>
+
+            <article class="process-item reveal" style="--delay: 0.1s">
+              <div class="process-icon-box">
+                <img src="./assets/icon-global-dist.svg" alt="" />
+              </div>
+              <h3>Global Distribution</h3>
+              <p>
+                Deliver your music to 150+ streaming platforms including Spotify
+                Apple Music and more.
+              </p>
+            </article>
+
+            <article class="process-item reveal" style="--delay: 0.16s">
+              <div class="process-icon-box">
+                <img src="./assets/icon-analytics.svg" alt="" />
+              </div>
+              <h3>Live Analytics</h3>
+              <p>
+                Monitor streams listener growth and performance metrics in real
+                time from your dashboard.
+              </p>
+            </article>
+
+            <article class="process-item reveal" style="--delay: 0.22s">
+              <div class="process-icon-box">
+                <img src="./assets/icon-royalty-tracking.svg" alt="" />
+              </div>
+              <h3>Royalty Tracking</h3>
+              <p>
+                Track earnings transparently and view detailed revenue reports
+                anytime.
+              </p>
+            </article>
+
+            <article class="process-item reveal" style="--delay: 0.28s">
+              <div class="process-icon-box">
+                <img src="./assets/icon-metadata.svg" alt="" />
+              </div>
+              <h3>Metadata Management</h3>
+              <p>
+                Easily manage artwork credits composer details and release
+                settings in one place.
+              </p>
+            </article>
+
+            <article class="process-item reveal" style="--delay: 0.34s">
+              <div class="process-icon-box">
+                <img src="./assets/icon-ownership.svg" alt="" />
+              </div>
+              <h3>Full Ownership</h3>
+              <p>
+                Keep 100 percent rights to your music while controlling
+                distribution on your terms.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
